@@ -144,7 +144,7 @@ function App() {
             </a>
             <div className="clink cl2">
               <div className="c-icon">📱</div>
-              <div><div className="c-label">Phone</div><div className="c-val">+447824075832</div></div>
+              <div><div className="c-label">Phone</div><div className="c-val">+44 007824075832</div></div>
             </div>
             <a href="https://www.linkedin.com/in/bijay-kalikote-17b2982b2/" target="_blank" rel="noreferrer" className="clink cl3">
               <div className="c-icon">💼</div>
