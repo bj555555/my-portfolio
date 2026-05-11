@@ -10,8 +10,8 @@ import emailjs from "@emailjs/browser";
 //      Budget: {{budget}}
 //      Message: {{message}}
 // 4. Replace the three strings below with your real IDs:
-const EMAILJS_SERVICE_ID  = "service_8eo06aj";   // e.g. "service_abc123"
-const EMAILJS_TEMPLATE_ID = ":template_z2i0c9s";  // e.g. "template_xyz789"
+const EMAILJS_SERVICE_ID  = "service_woe62hf";   // e.g. "service_abc123"
+const EMAILJS_TEMPLATE_ID = "template_z2i0c9s";  // e.g. "template_xyz789"
 const EMAILJS_PUBLIC_KEY  = "tda13CVaIgtE2zAOx";   // e.g. "AbCdEfGhIjKlMnOp"
 // ──────────────────────────────────────────────────────────────────────────
 
