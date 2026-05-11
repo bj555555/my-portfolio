@@ -11,7 +11,7 @@ import emailjs from "@emailjs/browser";
 //      Message: {{message}}
 // 4. Replace the three strings below with your real IDs:
 const EMAILJS_SERVICE_ID  = "service_woe62hf";   // e.g. "service_abc123"
-const EMAILJS_TEMPLATE_ID = "template_z2i0c9s";  // e.g. "template_xyz789"
+const EMAILJS_TEMPLATE_ID = "template_paul9lg";  // e.g. "template_xyz789"
 const EMAILJS_PUBLIC_KEY  = "tda13CVaIgtE2zAOx";   // e.g. "AbCdEfGhIjKlMnOp"
 // ──────────────────────────────────────────────────────────────────────────
 
@@ -65,9 +65,10 @@ export default function ContactForm() {
         EMAILJS_PUBLIC_KEY
       );
       setStatus("success");
-    } catch {
-      setStatus("error");
-    }
+    } catch (error) {
+  console.error("EmailJS error:", error);
+  setStatus("error");
+}
   }
 
   if (status === "success") {

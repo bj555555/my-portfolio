@@ -19,6 +19,7 @@ function App() {
       num: "Project — 01", cardClass: "pc1",
       title: "Online Booking",
       desc: "A responsive booking platform with date selection, slot UI, and a smooth confirmation flow.",
+      link: "https://spicenglory.netlify.app/",
       tags: [{ label: "HTML", cls: "t-purple" }, { label: "CSS", cls: "t-pink" }, { label: "JavaScript", cls: "t-yellow" }],
     },
     {
@@ -119,7 +120,14 @@ function App() {
                   <span key={t.label} className={`ptag ${t.cls}`}>{t.label}</span>
                 ))}
               </div>
-              <a href="#" className="proj-link">View Project <span>→</span></a>
+             <a
+  href={p.link}
+  target="_blank"
+  rel="noreferrer"
+  className="proj-link"
+>
+  View Project <span>→</span>
+</a>
             </div>
           ))}
         </div>
