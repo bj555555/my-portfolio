@@ -234,6 +234,7 @@ body {
   padding: 40px 32px; position: relative; overflow: hidden;
   transition: transform 0.25s;
   display: flex; flex-direction: column;
+  position: relative;
 }
 .proj-card:hover { transform: translateY(-6px); }
 .pc1::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--purple), var(--pink)); }
@@ -256,11 +257,11 @@ body {
 .t-yellow { background: rgba(251,191,36,0.15); color: var(--yellow);      border: 1px solid rgba(251,191,36,0.3); }
 
 .proj-link {
-  font-family: 'DM Mono', monospace; font-size: 12px;
-  color: rgba(240,238,232,0.4); letter-spacing: 2px;
-  text-transform: uppercase; text-decoration: none;
-  display: inline-flex; align-items: center; gap: 8px;
-  transition: color 0.2s;
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: auto;
 }
 .proj-link span { transition: transform 0.2s; display: inline-block; }
 .proj-link:hover { color: var(--white); }

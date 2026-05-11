@@ -16,25 +16,41 @@ function App() {
 
   const projects = [
     {
-      num: "Project — 01", cardClass: "pc1",
-      title: "Online Booking",
-      desc: "A responsive booking platform with date selection, slot UI, and a smooth confirmation flow.",
-      link: "https://spicenglory.netlify.app/",
-      tags: [{ label: "HTML", cls: "t-purple" }, { label: "CSS", cls: "t-pink" }, { label: "JavaScript", cls: "t-yellow" }],
-    },
-    {
-      num: "Project — 02", cardClass: "pc2",
-      title: "E-Commerce Site",
-      desc: "A modern e-commerce frontend — product listings, cart, and a slick checkout built with React.",
-      tags: [{ label: "HTML", cls: "t-purple" }, { label: "CSS", cls: "t-pink" }, { label: "React", cls: "t-cyan" }],
-    },
-    {
-      num: "Project — 03", cardClass: "pc3",
-      title: "Portfolio Site",
-      desc: "This portfolio — designed from scratch, coded in React, and crafted to stand out.",
-      tags: [{ label: "React", cls: "t-cyan" }, { label: "CSS", cls: "t-pink" }],
-    },
-  ];
+       num: "Project — 01",
+    cardClass: "pc1",
+    title: "Online Booking",
+    desc: "A responsive booking platform with date selection, slot UI, and a smooth confirmation flow.",
+    link: "https://spicenglory.netlify.app/",
+    tags: [
+      { label: "HTML", cls: "t-purple" },
+      { label: "CSS", cls: "t-pink" },
+      { label: "JavaScript", cls: "t-yellow" },
+    ],
+  },
+  {
+    num: "Project — 02",
+    cardClass: "pc2",
+    title: "E-Commerce Site",
+    desc: "A modern e-commerce frontend — product listings, cart, and a slick checkout built with React.",
+    link: "https://spicenglory.netlify.app/",
+    tags: [
+      { label: "HTML", cls: "t-purple" },
+      { label: "CSS", cls: "t-pink" },
+      { label: "React", cls: "t-cyan" },
+    ],
+  },
+  {
+    num: "Project — 03",
+    cardClass: "pc3",
+    title: "Portfolio Site",
+    desc: "This portfolio — designed from scratch, coded in React, and crafted to stand out.",
+    link: "https://github.com/bj555555/my-portfolio",
+    tags: [
+      { label: "React", cls: "t-cyan" },
+      { label: "CSS", cls: "t-pink" },
+    ],
+  },
+];
 
   return (
     <div className="app">
@@ -120,12 +136,7 @@ function App() {
                   <span key={t.label} className={`ptag ${t.cls}`}>{t.label}</span>
                 ))}
               </div>
-             <a
-  href={p.link}
-  target="_blank"
-  rel="noreferrer"
-  className="proj-link"
->
+           <a href={p.link} target="_blank" rel="noreferrer" className="proj-link">
   View Project <span>→</span>
 </a>
             </div>
